@@ -1,0 +1,75 @@
+18.-La salida "nil" significa que es nula.
+
+21.-'\t\n' Pone literalmente lo que se ha escrito en comillas simples.
+"\t\n" ejecuta el tabulador y luego un salto de linea.
+
+22.-%q es equivalente a comillas simples. Muestra literalmente lo que está entre corchetes.
+
+23.-%Q es equivalente a comillas dobles. Interpreta y ejecuta lo que está entre los corchetes.
+
+24.-En c queda el valor que contiene la a, que contiene la b y el HERE que pusimos al final.
+
+25.-En c queda la llamada a la variable a y la llamada a la variable b. No se sustituyen los valores de a y b, se guarda lo escrito de forma literal.
+
+26.-s[0,2] = "he", s[-1,1] = "o" y s[0,10] = "hello".
+
+27.-Queda "hello world" el operador << concatena la palabra "world" con lo que había en g.
+
+28.-Quedan tres puntos seguidos tal que así "...".
+
+29.-El resultado de ejecutar "#{a=a+1}"*3 es "2 2 2", pero el valor de a es 2.
+
+30.-Crea un array de palabras, cada una separada por comas.
+
+31.-Crea un array de estos comandos como si fueran palabras, cada uno separado por comas.
+
+32.-Crea un array de los comandos los cuales si se pueden ejecutar si se les llama.
+
+33.-Contiene un array de tamaño 3, donde cada uno de los contenidos son nil [nil, nil, nil].
+
+34.-Contiene un array de tamaño 3, el cual se compone de 3 ceros [0, 0, 0].
+
+35.-Contiene un array de tamaño 4, con las componentes 1, 2 ,3 y 4 [[1,2],[3,4]].
+
+36.-Queda un array de tamaño 3, con este contenido [0, 2, 4].
+
+37.-a = ('a'..'e').to_a crea un array que va desde a hasta e. a[1,1] = ["b"], a[-2,2] = ["d", "e"], a[0..2] = ["a", "b", "c"], a[0...1] = ["a"] y a[-2..-1] = ["d", "e"].
+
+38.-a[0,2] = w%{A B} cambia "a" y "b" por "A" y "B". a[2..5] = w%{C D E} hace lo mismo que lo anterior pero con "c", "d" y "e". a[0,0] = [1,2,3] añade al array 1,2 y 3 al inicio del mismo. a[0,2] = [] borra los elementos del array del 0 al 2, osea 1 y 2. a[-1,1] = ['Z'] sustituye la "E" por la "Z". a[-2,2] = nil sustituye "D" y "Z" por nil.
+
+39.-a=[1...4].to_a crea un array de [1, 2 ,3]. a = a+[4,5] le añade al array 4 y 5. a += [[6,7,8]] añade como sexto parametro el array [6,7,8]. a = a+9 da un error, no se puede sumar 9 al array.
+
+40.-x = %w{ a b c b a } cra un array de esas letras. x = x - %w{b c d} nos queda un array tal que así ["a", "a"].
+
+41.-z = [0]*8 Crea un array de 8 ceros.
+
+42.-a = [] crea un array vacío. a << 1 inserta el 1. a << 2 << 3 inserta el 2 y el 3. a << [4,5,6] inserta el array [4,5,6] como cuarto elemento en el array a. a.concat [7,8] concatena 7 y 8 como quinto y sexto elemento respectivamente del array a.
+
+43.-c = a|b une los dos conjuntos [1,2,3,4,5]. d = b|a une los dos conjuntos [5,4,3,2,1]. e = a&b hace una intersección de los dos conjuntos [2,3,4]. f = b&a lo mismo que lo anterior [4,3,2].
+
+44.-a.to_a crea un array del 1 al 10. b.to_a crea también un array del 1 al 10. b.include? 10 verifica si 10 se encuentra en el array b. b.include? 8 lo mismo que el anterior. b.step(2) {|x| print "#{x}"} muestra el intervalo de b. 1..3.to_a error, no se puede realizar esa operación.
+
+45.-En todos los casos el resultado es true.
+
+46.-true.class muestra TrueClass. false.class muestra FalseClass. puts "hello" if 0 muestra hello. puts "hello" if nil no muestra hello. puts "hello" if "" muestra hello despues de un warning: string literal in condition.
+
+47.-x.class confirma que x es un simbolo. x == 'sym' devuelve false. x == :sym devuelve true. z.class confirma que z es un simbolo. x == 'sym'.to_sym devuelve true. x.to:s == 'sym' devuelve true.
+
+48.-print s imprime Ruby. print s, t imprime RubyJava.
+
+49.-imprime "3 rubies".
+
+50.-x,y = 4,5 imprime [4,5]. z = x > y ? x : y imprime 5. x,y,z = [1,2,3] imprime [1,2,3].
+
+51.-x.keys muestra el array [:a, :b]. x.values muestra [1,2]. x muestra {:a => 1, :b => 2, :c => 3}. x vuelve a mostrar lo mismo. x muestra el array vacío {}. x.delete_if { |k,v| v%2 == 0} muestra {:a => 1}. x muestra lo mismo de antes.
+
+52.-Muestra 4 y 5 respectivamente.
+
+53.-Crea un hash de cero elementos.
+
+54.-Retorna ["hello", "world", "hello", "LPP"].
+
+55.-c = { :a=>3, :b=>2, :c=>1 } crea un hash con esos mismos elementos. La segunda sentencia muestra los valores de cada variable y de que tipo son, en este caso, simbolos.
+
+56.-git@github.com:alu0100697063/prct03.git
+
